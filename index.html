@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="CSS.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="container">
+        <header>
+            <h1 id="title">Le Questionnaire sur spotfy</h1>
+            <p id="description">
+                Merci de prendre de votre temps pour notre platforme
+            </p>
+        </header>
+        <form>
+            <div class="form-group">
+                <label id="name-label" for="name">Nom</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Entrer votre nom" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Entrer votre Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="120" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>Que faites vous actuellement</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>choisis ta situation</option>
+                    <option value="student">eleve</option>
+                    <option value="job">job à plein temps</option>
+                    <option value="learner">étudiant à plein temps</option>
+                    <option value="preferNo">Préfère ne rien dire</option>
+                    <option value="other">Autre</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Recommandrais-tu spotfy à un amis</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Bien
+                    sur</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />ptet</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Non</label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Que préfère tu dans spotfy?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Choisis une option</option>
+                    <option value="Playlist">Playlist</option>
+                    <option value="Mode orline">Mode orline</option>
+                    <option value="Communauté">Communauté</option>
+                    <option value="Cest gratos">Cest gratos</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Qu'aimerais-tu qu'on améliore?
+                </p>
+
+                <label><input name="prefer" value="front-end-projects" type="checkbox"
+                        class="input-checkbox" />LOGO</label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox"
+                        class="input-checkbox" />interface</label>
+                <label><input name="prefer" value="data-visualization" type="checkbox"
+                        class="input-checkbox" />Qualité</label>
+                <label><input name="prefer" value="challenges" type="checkbox"
+                        class="input-checkbox" />Communauté</label>
+                <label><input name="prefer" value="open-source-community" type="checkbox"
+                        class="input-checkbox" />Service
+                    après vente</label>
+            </div>
+
+            <div class="form-group">
+                <p>Un commentaire ?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Ecrit ton commentaire ici..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Envoyer
+                </button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
